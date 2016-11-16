@@ -1,0 +1,11 @@
+﻿@model List<MovieReviewer.Models.Movie>
+
+<h1>Movie Reviewer</h1>
+<hr/>
+
+<ul>
+    @foreach(var movie in Model)
+    {
+      <li>@movie.Name</li>
+    }
+</ul>

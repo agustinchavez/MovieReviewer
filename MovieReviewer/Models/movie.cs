@@ -20,19 +20,14 @@ namespace MovieReviewer.Models
             return GlobalVariables.Movies;
         }
 
-        public static Movie Read(string movie)
+        public static Movie Read(string name)
         {
-            foreach(var movie in GlobalVariables.Movies)
+            foreach (var movie in GlobalVariables.Movies)
             {
-                if (movie.Name == movie)
-                {
+                if (movie.Name == name)
                     return movie;
-                }
-                else
-                {
-                    return null;
-                }
             }
+            return null;
         }
     }
 }
