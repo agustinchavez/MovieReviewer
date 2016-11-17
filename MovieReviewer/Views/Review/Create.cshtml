@@ -1,0 +1,11 @@
+﻿@model MovieReviewer.Models.Review
+
+<h1>Add Review to Movie</h1>
+<hr/>
+<form asp-action="Create" asp-controller="Review" asp-route-moviewname="@ViewData["Movie"]">
+    <label asp-for="Rating"></label>
+    <input asp-for="Rating"/>
+    <label asp-for="Comments"></label>
+    <input asp-for="Comments"/>
+    <inout typeof="submit" value="Add Review to @ViewData"/>
+</form>
