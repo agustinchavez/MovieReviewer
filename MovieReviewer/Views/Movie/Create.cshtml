@@ -1,3 +1,12 @@
 ﻿@model MovieReviewer.Models.Movie
 
 <h1>Add movie to list</h1>
+<hr/>
+
+<form asp-action="Create" asp-controller="Movie">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <label asp-for="Description"></label>
+    <input asp-for="Description"/>
+    <input type="submit" value="Add Movie to List"/>
+</form>

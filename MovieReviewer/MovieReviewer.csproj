@@ -155,6 +155,7 @@
     </Compile>
     <Compile Include="GlobalVariables.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Review.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
