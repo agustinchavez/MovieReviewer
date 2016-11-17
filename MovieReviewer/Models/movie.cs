@@ -10,6 +10,8 @@ namespace MovieReviewer.Models
         public string Name { get; set; }
         public string Description { get; set; }
 
+        public List<Review> Reviews { get; set; }
+
         public static void Create(Movie movie)
         {
             GlobalVariables.Movies.Add(movie);
@@ -28,6 +30,11 @@ namespace MovieReviewer.Models
                     return movie;
             }
             return null;
+        }
+
+        public void AddReviewToMovie(Review review)
+        {
+            Reviews.Add(review);
         }
     }
 }
